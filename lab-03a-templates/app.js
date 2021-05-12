@@ -13,6 +13,9 @@ app.get('/', function(req,res){
     res.render('index.hbs')
 })
 
+app.get('/about-us', function(req,res){
+    res.render('about-us.hbs')
+})
 
 // this is so that we can test
 module.exports = app;
