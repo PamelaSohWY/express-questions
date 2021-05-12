@@ -28,5 +28,10 @@ app.get('/multiply/:left/:right', function(req,res){
     })
 })
 
+app.get('/gallery', function(req,res){
+    res.render('picture.hbs')
+
+})
+
 // this is so that we can test
 module.exports = app;
