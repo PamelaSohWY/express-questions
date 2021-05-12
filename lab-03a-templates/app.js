@@ -17,5 +17,16 @@ app.get('/about-us', function(req,res){
     res.render('about-us.hbs')
 })
 
+app.get('/multiply/:left/:right', function(req,res){
+    let left1= parseInt(req.params.left);
+    let right1= parseInt(req.params.right);
+    let total= left1 * right1;
+    res.render('results.hbs',{
+        "displayLeft": left1,
+        "displayRight": right1, 
+        "displayTotal":total
+    })
+})
+
 // this is so that we can test
 module.exports = app;
